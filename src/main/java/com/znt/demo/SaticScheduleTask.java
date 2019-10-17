@@ -33,7 +33,7 @@ public class SaticScheduleTask {
 
         logger.info("执行静态定时任务时间: " + LocalDateTime.now());
 
-        mailService.sendSimpleMail("zheng_nt@126.com","这是一封简单邮件","大家好，这是我的第一封邮件！");
+        mailService.sendSimpleMail("zhengniting@dianwoda.com","这是一封简单邮件","大家好，这是我的第一封邮件！");
 
     }
 
