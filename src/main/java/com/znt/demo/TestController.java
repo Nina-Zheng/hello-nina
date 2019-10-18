@@ -19,11 +19,18 @@ public class TestController {
     @Autowired
     private MailService mailService;
 
+    @RequestMapping("/")
+    public String test(){
+        return "项目启动成功~";
+    }
+
 
     @RequestMapping("/test")
-    public void test() {
+    public String mailSend() {
 
         mailService.sendSimpleMail("zhengniting@dianwoda.com", "这是一封简单邮件", "大家好，这是我的第一封邮件！");
+
+        return "邮件发送完毕！";
 
     }
 
