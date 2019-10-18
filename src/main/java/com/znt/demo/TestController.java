@@ -20,7 +20,7 @@ public class TestController {
     private MailService mailService;
 
 
-    @RequestMapping("/")
+    @RequestMapping("/test")
     public void test() {
 
         mailService.sendSimpleMail("zhengniting@dianwoda.com", "这是一封简单邮件", "大家好，这是我的第一封邮件！");
