@@ -20,7 +20,6 @@ import java.time.LocalDateTime;
 @Component
 @Configuration
 @EnableScheduling
-
 public class SaticScheduleTask {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
     @Autowired

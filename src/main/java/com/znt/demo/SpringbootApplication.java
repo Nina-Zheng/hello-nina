@@ -9,7 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 public class SpringbootApplication {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+
         SpringApplication.run(SpringbootApplication.class, args);
+        new Clock().loopReport();
+
     }
 }
