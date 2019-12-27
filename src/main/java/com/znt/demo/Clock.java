@@ -48,7 +48,7 @@ public class Clock {
     final void loopReport() throws InterruptedException {
         while (true) {
             try {
-                System.out.println(report());
+                logger.info(report());
             } catch (Throwable cause) {
                 cause.printStackTrace();
             }
