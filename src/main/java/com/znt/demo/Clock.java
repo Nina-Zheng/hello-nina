@@ -56,7 +56,7 @@ public class Clock {
                 ByteArrayOutputStream error = new ByteArrayOutputStream();
                 cause.printStackTrace(new PrintStream(error));
                 String exception = error.toString();
-                System.out.println("error"+exception);
+                logger.error("error"+exception);
             }
             Thread.sleep(1000);
         }
