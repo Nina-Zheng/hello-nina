@@ -4,6 +4,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 /**
  * @author znt
  * @date 2019/12/26
@@ -50,7 +53,10 @@ public class Clock {
             try {
                 logger.info(report());
             } catch (Throwable cause) {
-                cause.printStackTrace();
+                ByteArrayOutputStream error = new ByteArrayOutputStream();
+                cause.printStackTrace(new PrintStream(error));
+                String exception = error.toString();
+                System.out.println("error"+exception);
             }
             Thread.sleep(1000);
         }
