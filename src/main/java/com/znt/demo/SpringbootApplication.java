@@ -12,7 +12,7 @@ public class SpringbootApplication {
     public static void main(String[] args) throws InterruptedException {
 
         SpringApplication.run(SpringbootApplication.class, args);
-        new Clock().loopReport();
+        //new Clock().loopReport();
 
     }
 }
