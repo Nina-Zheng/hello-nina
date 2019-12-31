@@ -16,8 +16,7 @@ public class Clock {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     // 日期格式化
-    private final java.text.SimpleDateFormat clockDateFormat
-            = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    private final java.text.SimpleDateFormat clockDateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     /**
      * 状态检查
@@ -28,8 +27,6 @@ public class Clock {
 
     /**
      * 获取当前时间
-     *
-     * @return 当前时间
      */
     final java.util.Date now() {
         return new java.util.Date();
@@ -37,8 +34,6 @@ public class Clock {
 
     /**
      * 报告时间
-     *
-     * @return 报告时间
      */
     final String report() {
         checkState();
